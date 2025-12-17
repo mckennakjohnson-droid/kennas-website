@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/scratch.css">
+    <meta charset="UTF-8">
+    <title>Movie & TV Quote Generator</title>
+
+    <style>
+        body {
+            background-color: #fff6f9;
+            font-family: "Georgia", serif;
+            color: #4a2a3c;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 80px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #8a3b68;
+        }
+
+        .quote {
+            font-size: 1.3em;
+            margin: 30px 0;
+            font-style: italic;
+        }
+
+        .source {
+            font-weight: bold;
+            color: #b04a7a;
+        }
+
+        button {
+            background-color: #f2c6d2;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            color: #5a2a41;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e6aebf;
+        }
+
+        a {
+            display: block;
+            margin-top: 25px;
+            color: #8a3b68;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎬 Movie & TV Quote Generator</h1>
+        <p>Click the button to get a quote from one of my favorite movies or TV shows.</p>
+
+        <div class="quote" id="quoteText">Click the button to begin!</div>
+        <div class="source" id="quoteSource"></div>
+
+        <button onclick="generateQuote()">New Quote</button>
+
+        <a href="scratch.html">← Back to Scratch Page</a>
+    </div>
+
+    <script>
+        const quotes = [
+            {
+                text: "I’m just a girl, standing in front of a boy, asking him to love her.",
+                source: "Notting Hill"
+            },
+            {
+                text: "You are the best thing that ever happened to me.",
+                source: "My Best Friend’s Wedding"
+            },
+            {
+                text: "Love actually is all around.",
+                source: "Love Actually"
+            },
+            {
+                text: "I volunteer as tribute.",
+                source: "The Hunger Games"
+            },
+            {
+                text: "I am not pretty. I am not beautiful. I am as radiant as the sun.",
+                source: "The Hunger Games"
+            },
+            {
+                text: "You know that’s right.",
+                source: "Psych"
+            },
+            {
+                text: "I did it for me. I liked it. I was good at it.",
+                source: "Breaking Bad"
+            },
+            {
+                text: "When you’re backed against the wall, break the goddamn thing down.",
+                source: "Suits"
+            },
+            {
+                text: "The best way to understand someone is to listen.",
+                source: "Criminal Minds"
+            },
+            {
+                text: "Hello, brother.",
+                source: "The Vampire Diaries"
+            }
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quoteText").textContent = `"${quotes[randomIndex].text}"`;
+            document.getElementById("quoteSource").textContent = `— ${quotes[randomIndex].source}`;
+        }
+    </script>
+
+</body>
+</html>

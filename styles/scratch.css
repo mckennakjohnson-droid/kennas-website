@@ -1,0 +1,102 @@
+body {
+    background-color: #fff0f5;  /* Soft cream/lavender background */
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================
+   Sections
+============================ */
+.section {
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff; /* Slight contrast for sections */
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.05);
+}
+
+/* ============================
+   Links
+============================ */
+a {
+    color: #9b5fb5;  /* Purple links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ============================
+   Images
+============================ */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    border: 3px solid #f2a6c3;  /* Soft pink border */
+    border-radius: 8px;
+}
+
+/* ============================
+   Pink & Purple Text Classes
+============================ */
+.text-pink {
+    color: #f2a6c3 !important;  /* Pastel pink */
+}
+
+.text-purple {
+    color: #9b5fb5 !important;  /* Lavender purple */
+}
+
+/* ============================
+   Headings
+============================ */
+h1 {
+    text-align: center;
+    color: #9b5fb5;  /* Purple */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #f2a6c3;  /* Pink */
+    margin-top: 20px;
+}
+
+/* ============================
+   Lists
+============================ */
+ol li, ul li {
+    margin-bottom: 10px;
+}
+
+/* ============================
+   Video Embeds
+============================ */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* ============================
+   Back Links
+============================ */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #9b5fb5;  /* Purple */
+    font-weight: bold;
+}
+
+/* ============================
+   Optional small shadow for text
+============================ */
+.text-pink, .text-purple {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
